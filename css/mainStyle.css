@@ -1,0 +1,24 @@
+/* edite by mariam */
+#Parallax ,#Our_Customers{
+    background-image: url(../img/photo-1452723312111-3a7d0db0e024.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 55vh;
+}
+.Parallax-caption h1{
+    font-size: 4rem;
+    font-weight: inherit;
+    padding-bottom: 15px;
+}
+#Our_Customers{
+    background-image: url(../img/photo-1451417379553-15d8e8f49cde.jpg);
+    height: auto;
+    /* background-attachment: fixed;
+    background-size: cover;
+    background-position: center; */
+}
+#Our_Customers h2{
+    font-weight: inherit;
+}
+/* end */
