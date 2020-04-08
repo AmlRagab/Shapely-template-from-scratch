@@ -1,66 +1,177 @@
 /* please attention its common style over page edit by Aml */
 /* all buttons has same stle*/
-.btn-color 
-{background-color: #745cf9;
-    font-size: .8rem;}
-    /*all header has same styl add class text-whit if color of text white*/
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 400;
-        color: #0e1015;
-    }
-    /*section color*/
-    .sec-bg {background-color: #f5f5f5;}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btn-color {
+  background-color: #745cf9;
+  font-size: 0.8rem;
+}
+/*all header has same styl add class text-whit if color of text white*/
+/* h1 should be white  (fatma)*/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: #0e1015;
+}
+/*section color*/
+.sec-bg {
+  background-color: #f5f5f5;
+}
 
-    body{
-        font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-
+body {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 /* edite by mariam */
-#Parallax ,#Our_Customers{
-    background-image: url(../img/photo-1452723312111-3a7d0db0e024.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    height: 55vh;
+#Parallax,
+#Our_Customers {
+  background-image: url(../img/photo-1452723312111-3a7d0db0e024.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
 }
-.Parallax-caption h1{
-    font-size: 4rem;
-    font-weight: inherit;
-    padding-bottom: 15px;
+.Parallax-caption h1 {
+  font-size: 4rem;
+  font-weight: inherit;
+  padding-bottom: 15px;
 }
-#Our_Customers{
-    background-image: url(../img/photo-1451417379553-15d8e8f49cde.jpg);
-    height: auto;
-    /* background-attachment: fixed;
+#Our_Customers {
+  background-image: url(../img/photo-1451417379553-15d8e8f49cde.jpg);
+  height: auto;
+  /* background-attachment: fixed;
     background-size: cover;
     background-position: center; */
 }
-#Our_Customers h2{
-    font-weight: inherit;
+#Our_Customers h2 {
+  font-weight: inherit;
 }
 /* end */
 /*portfilio section  editing by Aml*/
-.portfolio-caption{line-height: 1.5;
-    color: #8c979e;}
+.portfolio-caption {
+  line-height: 1.5;
+  color: #8c979e;
+}
 
 .btn-color:hover {
-    background-color:#5234f9 ;
+  background-color: #5234f9;
 }
 /* logo slider*/
 
 .over {
-    background-color: rgba(255, 255, 255, 0.6);
-    position: relative;
-    z-index: 4;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    transition: all .5s;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.over:hover {
+  background-color: transparent;
+}
+
+/* Home style*/
+#home {
+  background-image: url("../img/photo-1443527216320-7e744084f5a7-1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
+  text-align: center;
+}
+.home-txt {
+  height: 100%;
+  color: white;
+}
+.home-txt a {
+  color: white;
+}
+#home .home-txt h1{
+    width:90%;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    font-family: raleway, helvetica neue, Helvetica, Arial, sans-serif;
+}
+.search-icon {
+  color: #745cf9;
+  cursor: pointer;
+ 
+}
+
+.search-form {
+  top:-10px;
+  right: 15px;
+  opacity: 0;
+ 
+}
+
+/*   */
+.search-icon:hover .search-form {
+  opacity:1;
+  top:50px;
 
 }
 
-.over:hover{
-    background-color: transparent;
+.btn-style {
+  line-height: 24px;
+  min-width: 200px;
+  font-family: inherit;
+  border: 2px solid #745cf9;
+  padding: 10px 26px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  text-align: center;
+  transition: all 0.3s;
+  margin-right: 8px;
+  margin-bottom: 24px;
+}
+.btn-filled {
+  background-color: #745cf9;
+}
+.btn-filled:hover {
+  color: white;
+}
+.btn-border {
+  border-color: #fff;
+}
+.btn-border:hover {
+  background-color: #e6e8e9;
+}
+/* drop down in nav */
+.nav-design ul li  a:hover{
+    color:rgb(82, 52, 249);
+}
+.nav-design ul li  a{
+    color:#8c979e;
+    width: 100%;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 400;
+    padding: 6px 24px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover{
+color:rgb(82, 52, 249);
+
+
+}
+.navbar-light .navbar-nav .active>.nav-link{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 53px;
+    text-transform: uppercase;
+
 }
