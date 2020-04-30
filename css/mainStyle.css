@@ -109,10 +109,37 @@ body {
   font-weight: 400;
   font-family: raleway, helvetica neue, Helvetica, Arial, sans-serif;
 }
-.search-icon {
-  color: #745cf9;
-  cursor: pointer;
+/* drop down in nav */
+.nav-design ul li a:hover {
+  color: rgb(82, 52, 249);
 }
+.nav-design ul li a {
+  color: #8c979e;
+  width: 100%;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: 400;
+  padding: 6px  24px  1px 24px;
+}
+.nav-design ul li .search-icon a i {
+
+  color: rgb(82, 52, 249);
+}
+.navbar-light .navbar-nav .active > .nav-link:hover {
+  color: rgb(82, 52, 249);
+}
+.navbar-light .navbar-nav .active > .search-icon:hover .search-form  {
+  opacity: 1;
+  animation: form-position 1s forwards;
+  -webkit-animation: form-position 1s forwards;
+
+}
+.navbar-light .navbar-nav .active > .nav-link {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 
 .search-form {
   background-color: #fff;
@@ -137,23 +164,19 @@ body {
   line-height: 24px;
 }
 /*   */
-.search-icon:hover .search-form {
-  opacity: 1;
-  animation: form-position 1s forwards;
-  -webkit-animation: form-position 1s forwards;
-}
+
 @keyframes form-position {
   0% {
     top: -60px;
   }
   70% {
-    top: 50px;
+    top: 40px;
   }
   80% {
-    top: 50px;
+    top: 40px;
   }
   100% {
-    top: 50px;
+    top: 40px;
   }
 }
 .search-form:hover {
@@ -192,31 +215,10 @@ body {
 .btn-border {
   border-color: #fff;
 }
-.btn-border:hover {
+/* .btn-border:hover {
   background-color: #e6e8e9;
-}
-/* drop down in nav */
-.nav-design ul li a:hover {
-  color: rgb(82, 52, 249);
-}
-.nav-design ul li a {
-  color: #8c979e;
-  width: 100%;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 400;
-  padding: 6px 24px;
-}
+} */
 
-.navbar-light .navbar-nav .active > .nav-link:hover {
-  color: rgb(82, 52, 249);
-}
-.navbar-light .navbar-nav .active > .nav-link {
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 53px;
-  text-transform: uppercase;
-}
 footer {
   background-color: #0e1015;
   color: rgb(255, 255, 255);
@@ -271,5 +273,7 @@ footer span:hover {
   #home .home-txt h1 {
     font-size: 40px;
   }
-  
+  .search-icon:hover .search-form {
+     
+  }
 }
